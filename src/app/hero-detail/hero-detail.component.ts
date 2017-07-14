@@ -3,7 +3,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Hero } from '../hero.model';
 import { HeroService } from '../hero.service';
-// import { FirebaseObjectObservable } from 'angularfire2/database';
+import { FirebaseObjectObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-hero-detail',
@@ -14,7 +14,7 @@ import { HeroService } from '../hero.service';
 
 export class HeroDetailComponent implements OnInit {
   heroId: string;
-  heroToDisplay: Hero;
+  heroToDisplay;
 
   constructor(private route: ActivatedRoute, private location: Location, private heroService: HeroService) { }
 
