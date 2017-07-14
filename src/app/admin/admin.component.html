@@ -13,16 +13,16 @@
   </div>
 
   <div>
-    <label>Hero Photo (url):</label>
-    <br>
-    <input #newPhoto>
-  </div>
-
-  <div>
     <label>Hero Description:</label>
     <br>
     <textarea #newDescription></textarea>
   </div>
-  <button (click)="submitForm(newName.value, newRole.value, newPhoto.value, newDescription.value); newName.value=''; newRole.value=''; newPhoto.value=''; newDescription.value=''">Add</button>
+
+  <div>
+    <label>Hero Photo (url):</label>
+    <br>
+    <input #newPhoto>
+  </div>
+  <button (click)="submitForm(newName.value, newRole.value, newDescription.value, newPhoto.value); newName.value=''; newRole.value=''; newDescription.value=''; newPhoto.value=''">Add</button>
 
 </div>
