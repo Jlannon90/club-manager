@@ -24,5 +24,8 @@
     <input #newPhoto>
   </div>
   <button (click)="submitForm(newName.value, newRole.value, newDescription.value, newPhoto.value); newName.value=''; newRole.value=''; newDescription.value=''; newPhoto.value=''">Add</button>
+</div>
 
+<div>
+  <app-heroes></app-heroes>
 </div>

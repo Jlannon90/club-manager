@@ -23,4 +23,12 @@ export class HeroService {
     return this.database.object('heroes/' + heroId);
   }
 
+  updateHero(localUpdatedHero){
+    var heroEntryInFirebase = this.getHeroById(localUpdatedHero.$key);
+    heroEntryInFirebase.update({name: localUpdatedHero.name,
+                                role: localUpdatedHero.role,
+                                description: localUpdatedHero.description,
+                                photo: localUpdatedHero.photo});
+  }
+
 }

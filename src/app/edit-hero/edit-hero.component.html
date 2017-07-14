@@ -1,0 +1,18 @@
+<h4>Edit Hero</h4>
+
+<label>New Hero Name:</label>
+<input [(ngModel)]="selectedHero.name">
+<br>
+
+<label>New Hero Role:</label>
+<input [(ngModel)]="selectedHero.role">
+<br>
+
+<label>New Hero Description:</label>
+<input [(ngModel)]="selectedHero.description">
+<br>
+
+<label>New Hero Photo (url):</label>
+<input [(ngModel)]="selectedHero.photo">
+
+<button (click)="beginUpdatingHero(selectedHero)">Update</button>
