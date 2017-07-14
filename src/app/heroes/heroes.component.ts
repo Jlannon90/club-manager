@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero.model';
 import { Router } from '@angular/router';
 import { HeroService } from '../hero.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-heroes',
@@ -10,7 +11,7 @@ import { HeroService } from '../hero.service';
   providers: [HeroService]
 })
 export class HeroesComponent implements OnInit {
-  heroes: Hero[];
+  heroes: FirebaseListObservable<any[]>;
 
   constructor(private router: Router, private heroService: HeroService){}
 
