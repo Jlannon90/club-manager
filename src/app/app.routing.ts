@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent }   from './about/about.component';
 import { HeroesComponent }   from './heroes/heroes.component';
+import { HeroDetailComponent }   from './hero-detail/hero-detail.component';
+
 
 
 const appRoutes: Routes = [
@@ -17,7 +19,11 @@ const appRoutes: Routes = [
   {
    path: 'heroes',
    component: HeroesComponent
- }
+ },
+ {
+    path: 'heroes/:id',
+    component: HeroDetailComponent
+  }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

@@ -1,3 +1,6 @@
 <h1>Heroes</h1>
 
-<p>All our heroes will be listed here shortly!</p>
+<div *ngFor="let hero of heroes" (click)="goToDetailPage(hero)">
+    <h3>{{hero.name}}</h3>
+    <img src="assets/img/{{hero.photo}}.png" alt="" />
+</div>
