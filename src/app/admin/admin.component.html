@@ -1,0 +1,28 @@
+<h3>Request to join Overwatch</h3>
+<div>
+  <div>
+    <label>Hero Name:</label>
+    <br>
+    <input #newName>
+  </div>
+
+  <div>
+    <label>Hero Role:</label>
+    <br>
+    <input #newRole>
+  </div>
+
+  <div>
+    <label>Hero Photo (url):</label>
+    <br>
+    <input #newPhoto>
+  </div>
+
+  <div>
+    <label>Hero Description:</label>
+    <br>
+    <textarea #newDescription></textarea>
+  </div>
+  <button (click)="submitForm(newName.value, newRole.value, newPhoto.value, newDescription.value); newName.value=''; newRole.value=''; newPhoto.value=''; newDescription.value=''">Add</button>
+
+</div>

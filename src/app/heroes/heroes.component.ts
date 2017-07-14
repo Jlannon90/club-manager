@@ -19,7 +19,7 @@ export class HeroesComponent implements OnInit {
     this.heroes = this.heroService.getHeroes();
   }
 
-  goToDetailPage(clickedHero: Hero) {
-    this.router.navigate(['heroes', clickedHero.id]);
+  goToDetailPage(clickedHero) {
+    this.router.navigate(['heroes', clickedHero.$key]);
   };
 }

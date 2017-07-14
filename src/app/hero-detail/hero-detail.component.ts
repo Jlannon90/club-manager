@@ -3,6 +3,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Hero } from '../hero.model';
 import { HeroService } from '../hero.service';
+// import { FirebaseObjectObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-hero-detail',
@@ -12,14 +13,14 @@ import { HeroService } from '../hero.service';
 })
 
 export class HeroDetailComponent implements OnInit {
-  heroId: number = null;
+  heroId: string;
   heroToDisplay: Hero;
 
   constructor(private route: ActivatedRoute, private location: Location, private heroService: HeroService) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      this.heroId = parseInt(urlParameters['id']);
+      this.heroId = urlParameters['id'];
     });
     this.heroToDisplay = this.heroService.getHeroById(this.heroId);
   }
