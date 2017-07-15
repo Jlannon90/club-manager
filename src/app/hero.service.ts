@@ -31,4 +31,9 @@ export class HeroService {
                                 photo: localUpdatedHero.photo});
   }
 
+  deleteHero(localHeroToDelete){
+    var heroEntryInFirebase = this.getHeroById(localHeroToDelete.$key);
+    heroEntryInFirebase.remove();
+  }
+
 }

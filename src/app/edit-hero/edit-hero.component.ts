@@ -19,4 +19,10 @@ export class EditHeroComponent implements OnInit {
   beginUpdatingHero(heroToUpdate){
     this.heroService.updateHero(heroToUpdate);
   }
+
+  beginDeletingHero(heroToDelete){
+    if(confirm("Are you sure you want to leave Overwatch? The world needs heroes like you...")){
+      this.heroService.deleteHero(heroToDelete);
+    }
+  }
 }
