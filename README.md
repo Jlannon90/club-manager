@@ -15,10 +15,8 @@ _{This is an application that allows a user to add, edit, view and delete new he
 * _Run the following commands_
 * _$ npm install_
 * _$ bower install_
-* _$ ng serve_
-* _Navigate to http://localhost:4200/_
 * _Within the src folder create a file in the app directory called api-keys.ts_
-* _Copy and Paste the following into the file:
+*_Copy and Paste the following into the file:
 
 export var masterFirebaseConfig = {
     apiKey: "AIzaSyBWmbUg9o0DjVmF53Ggg7sh9CbKjIHQD8Q",
@@ -27,6 +25,9 @@ export var masterFirebaseConfig = {
     storageBucket: "",
     messagingSenderId: "750894090679"
   };_
+* _Run the command $ ng serve_
+* _Navigate to http://localhost:4200/_
+
 
 
 ## Known Bugs
