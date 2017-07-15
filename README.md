@@ -1,28 +1,48 @@
-# ClubManager
+# _{Overwatch}_
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+#### _{Overwatch}, {07.14.2017}_
 
-## Development server
+#### By _**{James Lannon}**_
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Description
 
-## Code scaffolding
+_{This is an application that allows a user to add, edit, view and delete new heroes to the Overwatch team.}_
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
 
-## Build
+## Setup/Installation Requirements
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+* _Clone this repository_
+* _Run the following commands_
+* _$ npm install_
+* _$ bower install_
+* _$ ng serve_
+* _Navigate to http://localhost:4200/_
+* _Within the src folder create a file in the app directory called api-keys.ts_
+* _Copy and Paste the following into the file:
 
-## Running unit tests
+export var masterFirebaseConfig = {
+    apiKey: "AIzaSyBWmbUg9o0DjVmF53Ggg7sh9CbKjIHQD8Q",
+    authDomain: "club-manager-8ecdf.firebaseapp.com",
+    databaseURL: "https://club-manager-8ecdf.firebaseio.com",
+    storageBucket: "",
+    messagingSenderId: "750894090679"
+  };_
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Known Bugs
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+_{No known bugs.}_
 
-## Further help
+## Support and contact details
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+_{Contact me, James Lannon, via email at jamesmlannon1990@live.com.}_
+
+## Technologies Used
+
+_{HTML, Angular2, Javascript, NPM, Bower, Typescript, Angular CLI, Firebase, jQuery, SCSS}_
+
+### License
+
+*{This software is licensed under the MIT license}*
+
+Copyright (c) 2017 **_{James Lannon}_**
