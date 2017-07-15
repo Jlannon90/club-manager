@@ -1,0 +1,23 @@
+.heroes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  img {
+    height: 400px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  h3 {
+    font-size: 40px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  p {
+    width: 900px;
+    text-align: left;
+  }
+}

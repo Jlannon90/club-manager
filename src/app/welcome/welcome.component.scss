@@ -1,0 +1,26 @@
+img {
+  border: 6px solid black;
+  border-radius: 5px;
+}
+
+#team {
+  margin-top: 150px;
+  z-index: 2;
+
+}
+
+#fam {
+  position: absolute;
+  left: 400px;
+  transform: rotateZ(20deg);
+
+}
+
+#group {
+  position: absolute;
+  right: 200px;
+  top: 700px;
+  transform: rotateZ(-20deg);
+  z-index: -1;
+
+}

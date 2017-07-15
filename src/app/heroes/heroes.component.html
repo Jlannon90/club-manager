@@ -1,12 +1,14 @@
 <h1>Heroes</h1>
 
-<div *ngFor="let hero of heroes | async">
-    <h3 (click)="goToDetailPage(hero)">{{hero.name}}</h3>
-    <img (click)="goToDetailPage(hero)" src="{{hero.photo}}" alt="" />
-    <div *ngIf="currentRoute === '/admin'">
-      <h4>{{hero.role}}</h4>
-      <p>{{hero.description}}</p>
-      <app-edit-hero [selectedHero]="hero"></app-edit-hero>
-      <hr>
-    </div>
+<div class="heroes">
+  <div *ngFor="let hero of heroes | async">
+      <h3 (click)="goToDetailPage(hero)">{{hero.name}}</h3>
+      <img (click)="goToDetailPage(hero)" src="{{hero.photo}}" alt="" />
+      <div *ngIf="currentRoute === '/admin'">
+        <h4>{{hero.role}}</h4>
+        <p>{{hero.description}}</p>
+        <app-edit-hero [selectedHero]="hero"></app-edit-hero>
+        <hr>
+      </div>
+  </div>
 </div>

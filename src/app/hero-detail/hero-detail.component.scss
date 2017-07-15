@@ -1,0 +1,22 @@
+.details {
+  display: flex;
+  justify-content: center;
+  .role-photo {
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img {
+      height: 400px;
+    }
+  }
+  .description {
+    width: 30%;
+    text-align: right;
+  }
+}
+
+h3 {
+  font-size: 60px;
+  font-family: bignoodletoo;
+}

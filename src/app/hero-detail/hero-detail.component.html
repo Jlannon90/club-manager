@@ -1,6 +1,12 @@
 <div>
   <h3>{{(heroToDisplay | async)?.name}}</h3>
-  <h4>{{(heroToDisplay | async)?.role}}</h4>
-  <img src="{{(heroToDisplay | async)?.photo}}" alt="hero photo" />
-  <p>{{(heroToDisplay | async)?.description}}</p>
+  <div class="details">
+    <div class="role-photo">
+      <img src="{{(heroToDisplay | async)?.photo}}" alt="hero photo" />
+      <h4>{{(heroToDisplay | async)?.role}}</h4>
+    </div>    
+    <div class="description">
+      <p>{{(heroToDisplay | async)?.description}}</p>
+    </div>
+  </div>
 </div>

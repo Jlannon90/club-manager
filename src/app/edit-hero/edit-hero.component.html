@@ -1,19 +1,25 @@
 <h4>Edit Hero</h4>
 
-<label>New Hero Name:</label>
-<input [(ngModel)]="selectedHero.name">
-<br>
+<div class="edit">
+  <div class="break">
+    <label>New Hero Name:</label>
+    <input [(ngModel)]="selectedHero.name">
+    <br>
+    <label>New Hero Role:</label>
+    <input [(ngModel)]="selectedHero.role">
+  </div>
 
-<label>New Hero Role:</label>
-<input [(ngModel)]="selectedHero.role">
-<br>
+  <div class="break">
+    <label>New Hero Description:</label>
+    <input [(ngModel)]="selectedHero.description">
+    <br>
+    <label>New Hero Photo (url):</label>
+    <input [(ngModel)]="selectedHero.photo">
+  </div>
 
-<label>New Hero Description:</label>
-<input [(ngModel)]="selectedHero.description">
-<br>
+</div>
 
-<label>New Hero Photo (url):</label>
-<input [(ngModel)]="selectedHero.photo">
-
-<button (click)="beginUpdatingHero(selectedHero)">Update</button>
-<button (click)="beginDeletingHero(selectedHero)">Delete</button>
+<div class="buttons">
+  <button (click)="beginUpdatingHero(selectedHero)">Update</button>
+  <button (click)="beginDeletingHero(selectedHero)">Delete</button>
+</div>
